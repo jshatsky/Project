@@ -5,42 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stadium</title>
-    <link rel="stylesheet" href="" type="text/css">
+    <link rel="stylesheet" href="general.css" type="text/css">
 </head>
 <style>
-.img{
-    width: 200px;
-}
+
 #park{
     width: 750px;
+    margin-left:calc(50% - 375px);
+    margin-top: 20px;
+}
+
+h2{
+    margin-top:50px;
+}
+
+a{
+    text-align:center;
+    margin-top: 10px;
+    display: block;
 }
 </style>
 <body>
-            <div class="container">
-                <div class="upper_menu">
-                    <div><img class="img-first" src="" /></div>
-                </div>
-                <div href="https://www.nytimes.com/"><img class="img" src="logo1.png"></div>
-                <div class="text">Marlins Fan Page - Jason Shatsky</div>
-                <div class="menu_list">
-                    <li class="first"><a href="index.htm">Home</a></li>
-                    <li><a href="team.htm">Team</a></li>
-                    <li><a href="stadium.htm">Stadium</a></li>
-                    <li><a href="contact.htm">Contact</a></li>
-                    <li><a href="sitemap.htm">Site Map</a></li>
-                </div>
-           </div>   
+    <div class="container">
+        <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
+        <div class="menu_list_left">
+            <li class="first"><a href="index.htm">Home</a></li>
+            <li><a href="team.htm">Team</a></li>
+            <li><a href="stadium.htm">Stadium</a></li>
+        </div>
+        <div class="menu_list_right">
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="../../WebTech/classwork/low.htm">List of Works</a></li>
+            <li><a href="sitemap.htm">Site Map</a></li>
+        </div>
+    </div>  
 
            <h2>Below is a clickable map of the stadium and parking options.</h2>
            <p>
-                <map name="Marlinspark">
-                    <area shape="rect" coords="865, 318, 1820, 1066" href="https://www.mlb.com/marlins/ballpark/information/guide" alt="Marlins Park Guide" title="Marlins Park Guide"target="_blank">
-                    <area shape="rect" coords="531, 1184, 1268, 1325" href="https://www.mlb.com/marlins/ballpark/transportation/parking" alt="Parking" title="Parking"target="_blank">
+                <map id="map" name="Marlinspark">
+                    <area shape="rect" coords="0, 0, 100, 100" href="https://www.mlb.com/marlins/ballpark/information/guide" alt="Marlins Park Guide" title="Marlins Park Guide"target="_blank">
+                    <area shape="rect" coords="600, 380, 750, 480" href="https://www.mlb.com/marlins/ballpark/transportation/parking" alt="Parking" title="Parking"target="_blank">
                 </map>
                 <img id="park" src="parking.png" usemap="#Marlinspark" alt="Parking Map" title="Clickable Map">
                 </p>
-            
-
+                <a>Click on the top left corner of the image to view the stadium guide.</a>
+                <a>Click on the bottom right corner of the image to view the parking information.</a>
 </body>
   <!--I, Jason Shatsky, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work.-->
 </html>
