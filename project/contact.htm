@@ -8,26 +8,54 @@
     <link rel="stylesheet" href="general.css" type="text/css">
 </head>
 <style>
+    h1{
+        font-family: sans-serif;
+        text-align:center;
+    }
+
+    form{
+        text-align:center;
+        font-family: sans-serif;
+        font-size:16px;
+        font-weight:bold;
+    }
+
+    input{
+        border-radius:5px;
+        height:25px;
+
+        font-family: sans-serif;
+        font-size:16px;
+        padding-left:5px;
+        margin-top: 10px;
+    }
 </style>
 <body>
+    <script>
+        function validate () {
+            if( document.Form.fName.value == "" ) {
+            alert( "Please provide your name!" );
+         }
+        }
+    </script>
     <div class="container">
-        <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
-        <div class="menu_list_left">
-            <li class="first"><a href="index.htm">Home</a></li>
-            <li><a href="team.htm">Team</a></li>
-            <li><a href="stadium.htm">Stadium</a></li>
-        </div>
-        <div class="menu_list_right">
-            <li><a href="contact.htm">Contact</a></li>
-            <li><a href="../../WebTech/classwork/low.htm">List of Works</a></li>
-            <li><a href="sitemap.htm">Site Map</a></li>
-        </div>
-    </div>   
+            <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
+            <div class="menu_list_left">
+                <li class="first"><a href="index.htm">Home</a></li>
+                <li><a href="team.htm">Team</a></li>
+                <li><a href="stadium.htm">Stadium</a></li>
+            </div>
+            <div class="menu_list_right">
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="credits.htm">Credits</a></li>
+                <li><a href="sitemap.htm">Site Map</a></li>
+            </div>
+        </div>   
                     <br>
                     <br>
 
-                    <h3>Contact Us</h3>
-           <form action="">
+                    <h1>Contact Us</h1>
+           <form name="Form" action="" name = "myForm" onsubmit = "validate();">
                 <div>
                     First Name:
                     <input

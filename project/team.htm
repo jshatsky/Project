@@ -11,19 +11,19 @@
 <style>
 </style>
 <body>
-    <div class="container">
-        <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
-        <div class="menu_list_left">
-            <li class="first"><a href="index.htm">Home</a></li>
-            <li><a href="team.htm">Team</a></li>
-            <li><a href="stadium.htm">Stadium</a></li>
-        </div>
-        <div class="menu_list_right">
-            <li><a href="contact.htm">Contact</a></li>
-            <li><a href="../../WebTech/classwork/low.htm">List of Works</a></li>
-            <li><a href="sitemap.htm">Site Map</a></li>
-        </div>
-    </div>   
+        <div class="container">
+                <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
+                <div class="menu_list_left">
+                    <li class="first"><a href="index.htm">Home</a></li>
+                    <li><a href="team.htm">Team</a></li>
+                    <li><a href="stadium.htm">Stadium</a></li>
+                </div>
+                <div class="menu_list_right">
+                    <li><a href="contact.htm">Contact</a></li>
+                    <li><a href="credits.htm">Credits</a></li>
+                    <li><a href="sitemap.htm">Site Map</a></li>
+                </div>
+            </div>>   
 
 <caption><h1>Miami Marlins Top Players</h1></caption>
     <table>
@@ -64,10 +64,18 @@
     <br>
 
     <img id="pic1" src="team1.png" title="Uniform" alt="uniform">
-    <img id="pic1" src="team2.jpg" title=" Harold Ramirez" alt="ramirez">
+    <img onmouseover="change()" onmouseout="changeAgain()" id="pic1" class="pic2" src="team2.jpg" title=" Harold Ramirez" alt="ramirez">
     <img id="pic1" src="team3.jpg" title="Stadium" alt="stadium">
 
+    <script>
+        function change(){
+            document.getElementsByClassName("pic2")[0].src="castro.jpg";
+        }
 
+        function changeAgain(){
+            document.getElementsByClassName("pic2")[0].src="team2.jpg";
+        }
+    </script>
 </body>
   <!--I, Jason Shatsky, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work.-->
 </html>

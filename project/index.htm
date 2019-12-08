@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="general.css" type="text/css">
 </head>
-<style>
-</style>
 <body>
+        <script>
+        $(document).ready(function (){
+            $(".caption").on("click", function(){
+                $(".image").css({"border":" 1px solid black"});
+            });
+        });
+            </script>
     <div class="container">
-        <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
-        <div class="menu_list_left">
-            <li class="first"><a href="index.htm">Home</a></li>
-            <li><a href="team.htm">Team</a></li>
-            <li><a href="stadium.htm">Stadium</a></li>
-        </div>
-        <div class="menu_list_right">
-            <li><a href="contact.htm">Contact</a></li>
-            <li><a href="../../WebTech/classwork/low.htm">List of Works</a></li>
-            <li><a href="sitemap.htm">Site Map</a></li>
-        </div>
-    </div>   
+            <img onclick="window.location.href='index.htm'" class="img" src="logo1.png">
+            <div class="menu_list_left">
+                <li class="first"><a href="index.htm">Home</a></li>
+                <li><a href="team.htm">Team</a></li>
+                <li><a href="stadium.htm">Stadium</a></li>
+            </div>
+            <div class="menu_list_right">
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="credits.htm">Credits</a></li>
+                <li><a href="sitemap.htm">Site Map</a></li>
+            </div>
+        </div>   
     <iframe class="audio" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309343913&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
 <h1>Welcome to Jason's Miami Marlins Fanpage.</h1>
 
-<h2>Welcome to Jason's Miami Marlins fanpage. The Miami Marlins are a professional baseball team located in Miami, Florida. The Marlins are in the National League East division and won the World Series in 1997 and 2003.</h2>
-
-<img class="img2" src="castro.jpg"/>
+<h2 id="title" onclick="changeColor()">Welcome to Jason's Miami Marlins fanpage. The Miami Marlins are a professional baseball team located in Miami, Florida. The Marlins are in the National League East division and won the World Series in 1997 and 2003.</h2>
+<script>
+    function changeColor(){
+        document.getElementById("title").style.color="red"
+    }
+</script>
+<div class="image"><img id="img2" class="img2" src="castro.jpg"/><br><a class="caption">click on me!</a></div>
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/A6mO9PlBs6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </body>
